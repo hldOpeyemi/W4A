@@ -69,7 +69,7 @@ header nav {
 #container3 {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: sandybrown;
+    background-color: seashell;
     padding-top: 15px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -77,23 +77,81 @@ header nav {
     border-width: 2px;
     border-style: solid ;
     border-color: black;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
 
 }
-p {
+
+#container4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color:beige;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-width: 2px;
+    border-style: solid ;
+    border-color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#container5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: bisque;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-width: 2px;
+    border-style: solid ;
+    border-color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#team p{
 display: none;
 }
-@media only screen and (min-width: 720px) {
-    p {
-     display: contents;
-       }
-    }
 
-    @media only screen and (min-width: 950px) {
-    p {
-       display: contents;
-      }
-        }  
+#container4 div{
+    display: contents;
+}
+
+@media only screen and (min-width: 720px) {
+    
+    #team p {
+        display: contents;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+        #container4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center
+              }
+        
+       #team p{
+            display: contents;
+        }
+
+        #container5 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+    }
+        #img5 {
+            order: 2;
+        }
+}
